@@ -44,10 +44,13 @@
             <p>Retype Password</p>
             <input type="password" name="repassword" required>
             <br>
-            <input type="submit" value="Sign up" onclick="myfunction"><br>
+
+            <input type="submit" value="Sign up" onclick="myfunction()"><br>
             <div id="msg">Congrajulations You Sign Up successfully!!</div>
+            <a href="/login copy.html" style="text-decoration: none;color: white;"> Login</a>
             <script>
                 function myfunction() {
+                    alert("singed up sucessfully");
                     var x = document.getElementById("msg");
                     setTimeout(function() {
                         x.className = x.className.replace("show", "");
