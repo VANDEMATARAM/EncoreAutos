@@ -1,0 +1,164 @@
+header {
+    display: flex;
+    background-color: #007ee5;
+    position: relative;
+    left: -10px;
+    top: -10px;
+}
+
+header.img {
+    margin-left: 100px;
+}
+
+.navigation {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.best {
+    width: 185px;
+    height: 100px;
+    margin-left: 90px;
+}
+
+.name {
+    margin-left: 110px;
+    margin-right: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nono {
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    margin-left: px;
+}
+
+.column {
+    -webkit-flex: 1;
+    /* Safari 6.1+ */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+}
+
+.bod1 {
+    background-image: url(w);
+    background-size: cover;
+}
+
+.bod {
+    border-width: 10px 20px 10px 0px;
+    padding: 20px 0px 30px 0px;
+}
+
+.mar {
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-left: 80px;
+}
+
+.pad {
+    padding: 50px 20px 20px 60px;
+}
+
+.nonol {
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bestl {
+    width: 120px;
+    height: 100px;
+    margin-left: 90px;
+}
+
+.namel {
+    margin-left: 125px;
+    margin-right: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image {
+    width: 40px;
+    height: 40px;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 8px;
+    position: relative;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.nono2 {
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text {
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.size-14 {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navidownimg {
+    position: relative;
+    left: -5px;
+    top: -9px;
+    width: 100%;
+}
+
+.bodbod table,
+td,
+th {
+    border-right: 0.5px dotted black;
+}
+
+footer {
+    background-color: wheat;
+    padding-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: darkslategray;
+    text-align: justify
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: darkblue;
+    text-align: justify;
+}

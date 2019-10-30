@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    background-color: #007ee5;
+}
+
+img {
+    margin-left: 50;
+}
+
+.navigation {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+.navigation:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.best{
+    width: 90px ; height:90px ;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+         <title>FLY^haut</title>
+</head>
+<body>
+       <header>
+          <a href="#" > <img class="logoimage"src="mainl;ogo.png" alt=""></a>
+          <nav>
+             <ul class="nav_links">
+                  <button class="links " id="login1" onclick="document.getElementById('id01').style.display='block'" style="width:auto ;">Login</button>
+
+                  <div id="id01" class="modal">
+                    <form class="modal-content animate" action="/action_page.php">
+                      <div class="container">
+                              
+                              <div class="imgcontainer">
+                                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                      
+                                    </div>
+                                    <h2 style="color: white;margin-left: 20px;">Log In</h2>
+                          <br><br>
+                        <label for="uname" class="loginname"><strong>Username</strong></label><br>
+                        <input  type="email" placeholder="Enter Username" name="uname" required>
+                         <br><br>
+                        <label for="psw" class="loginname"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                          
+                        <input type="submit" value="Login">
+                        <br >
+                        
+                              <a href="#"class="passwordreset"  style="font-size:15px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><span>Reset Password</span></a><span class="line"></span>
+                              <a href="#"class="passwordreset passwordreset2 " style="font-size:15px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Forgot Password</a><br><br>                
+                              <span class="signup"> Don't have account?</span><a href="signup.html" class="angersignup">&nbsp;Sign Up</a>
+                        
+                        
+                      </div>
+                  
+                        
+                    </form>
+                  </div>
+                  
+                  <script>
+                  // Get the modal
+                  var modal = document.getElementById('id01');
+                  
+                  // When the user clicks anywhere outside of the modal, close it
+                  window.onclick = function(event) {
+                      if (event.target == modal) {
+                          modal.style.display = "none";
+                      }
+                  }
+                  </script>
+                  <a href="/Homepage/LOGIN/signup.html" target="_blank"> <li class="links">Signup</li></a>
+
+             </ul>
+             
+             
+             
+          </nav>
+       </header>
+       <div class="searchcontainer">
+         <ul class="containerul">
+           <li class="mainlist1 mainlist">
+             <a href="#">
+               <img class="imgmanipulate" src="/Homepage/icon/flight.png" alt="flight">
+               <p class="para">Flight</p>
+             </a>
+             <div class="dropdown-content dropdown-content1">
+               <div class="maintripway">
+                 <input class="tripway" type="radio" ><span class="tripelement">ONEWAY</span>
+                 <input class="tripway" type="radio"><span class="tripelement">ROUND TRIP</span>
+                 <input class="tripway" type="radio"><span class="tripelement">MULTICITY</span>
+               </div>
+              <form action="#" class="formclass">
+                <table>
+                  <tr>
+                    <td class="tablerow ">
+                        <p class="para101 paraspecial1">From</p>
+                        
+                    </td>
+                    <td class="tablerow tablerow2">
+                        <p class="para101 paraspecial2">To</p>
+                        
+                    </td>
+                    <td class="tablerow tablerow3">
+                        <p class="para101 paraspecial3">Departure <i class="down arrow"></i></p></p>
+                        <input class="datee" type="date">
+                    </td>
+                    <td class="tablerow tablerow4">
+                        <p class="para101 paraspecial4">Return  <i class="down arrow"></i></p>
+                        <input class="datee tableinput3" type="date">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tablerow1">
+                        <input class="tablerow tablerow1" type="text">
+                    </td>
+                    <td class="tablerow tablero"> 
+                        <input type="text">
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                </table>
+
+              </form>
+            </div>
+           </li>
+           <li class="mainlist1">
+            <a href="#">
+              <img class="imgmanipulate" src="/Homepage/icon/train.png" alt="flight">
+              <p class="para">Train</p>
+            </a>
+            <div class="dropdown-content dropdown-content2 ">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="mainlist1">
+            <a href="#">
+              <img class="imgmanipulate" src="/Homepage/icon/bus.png" alt="flight">
+              <p class="para">Bus</p>
+            </a>
+            <div class="dropdown-content dropdown-content3 ">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="mainlist1">
+            <a href="#">
+              <img class="imgmanipulate" src="/Homepage/icon/cab.png" alt="flight">
+              <p class="para">Cabs</p>
+            </a>
+            <div class="dropdown-content dropdown-content4 ">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+         </ul>        
+       </div>
+               <!-- cards with slider-->
+               <div class="blogs-main">
+                  <h1 class="travel-blogs">Travel Blogs</h1>
+                     <div class="row">
+                           
+                             <div class="card-main">
+                               <h3>Card 1</h3>
+                               <img class="card-image" src="/Homepage/card/image1.jpg" alt="">
+                               <p>Some text</p>
+                             </div>
+                           
+                         
+                         
+                             <div class="card-main">
+                               <h3>Card 2</h3>
+                               <img class="card-image" src="/Homepage/card/image2.jpg" alt="">
+                               <p>Some text</p>
+                             </div>
+                           
+                           
+                           
+                             <div class="card-main">
+                               <h3>Card 3</h3>
+                               <img class="card-image" src="/Homepage/card/image6.jpg" alt="">
+                               <p>Some text</p>
+                             </div>
+                           
+                                 <div class="card-main">
+                                   <h3>Card 2</h3>
+                                   <img class="card-image" src="/Homepage/card/image2.jpg" alt="">
+                                   <p>Some text</p>
+                                 </div>
+                              
+                           
+                           
+                         </div>
+               </div>
+               
+          
+</body>
+</html>

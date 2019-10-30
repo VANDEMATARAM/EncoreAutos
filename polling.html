@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>car polling</title>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="/style/ss.css"></link>
+    <script src="/script/ss.js"></script>
+
+    <style>
+        .come {
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+        
+        .space {
+            margin-right: 100px;
+            margin-left: 50px;
+        }
+        
+        .di {
+            border-right: 1px dashed black;
+            border-bottom: 1px solid black;
+        }
+        
+        .place {
+            margin-top: 19px;
+            margin-left: 150px;
+        }
+        
+        .hi {
+            margin-top: 40px;
+        }
+        
+        h1 {
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <a href="/homepage.html"> <img src="/images/llogooo.PNG " height="70 " style=" margin-left: 100px ;"></a>
+        <a class=" navigation " href="/Web Project/Car pricing/car pricing.html">New car pricing</a>
+        <a class="navigation " href="carrev final.html">Car review</a>
+        <a style="text-decoration:underline;" class="navigation " href="polling.html ">Car polling</a>
+        <a><img src="/images/bell.PNG " height="40px " style="margin-top: 15px; margin-left: 400px "></a>
+        <a href="login copy.html "><img src="/images/login.PNG " height="40px " style="margin-top: 15px; margin-left: 50px "></a>
+    </header>
+
+    <form name="form">
+        <table class="bod1 space come">
+
+            <tr>
+                <td style="border-style: none;">
+                    <div class="type-center-ui-products p-0 pr-lg-1 pr-xl-2  ">
+                        <div class="row ">
+                            <div class="di ">
+                                <a class="nonol bod " href="/Web Project/company/acura.html "><img src="/images/Acura.png " class="bestl space ">
+                                    <div><span class="namel text">Acura</span></div>
+                                </a>
+                                <span style="margin-left: 150px"> <button type="button" class="btn btn-success come acura" onclick="acura() "  id="but1"   >Vote</button></span>
+                                <div id="poll"></div>
+                            </div>
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/audi.html "><img src="/images/audi.png " class="bestl space">
+                                    <div><span class="namel ">Audi</span></div>
+                                </a>
+                                <span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="audi() " id="but2">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/bmw.html "><img src="/images/BMW.png " class="bestl space ">
+                                    <div><span class="namel ">BMW</span></div>
+                                </a>
+                                <span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="bmw()" id="but3">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/Chevrolet.html "><img src="/images/Chevrolet.png " class="bestl space">
+                                    <div><span class="namel " style="margin-left:110px ; ">Chevrolet</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="chevrolet()" id="but4">Vote</button></span>
+                            </div>
+                        </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="border-style: none;">
+                    <div class="type-center-ui-products p-0 pr-lg-1 pr-xl-2 ">
+                        <div class="row ">
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/Dodge.html "><img src="/images/Dodge.png " class="bestl space ">
+                                    <div><span class="namel ">Dodge</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="dodge()" id="but5">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/ford.html "><img src="/images/Ford.png " class="bestl space">
+                                    <div><span class="namel ">Ford</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="ford()" id="but6">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/gmc.html "><img src="/images/GMC.png " class="bestl space ">
+                                    <div><span class="namel ">GMC</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="gmc()" id="but7">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/honda.html "><img src="/images/Honda.png " class="bestl space">
+                                    <div><span class="namel ">Honda</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="honda()" id="but8">Vote</button></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-style: none;">
+                    <div class="type-center-ui-products p-0 pr-lg-1 pr-xl-2 ">
+                        <div class=" row ">
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/hyundai.html "><img src="/images/Hyundai.png " class="bestl space">
+                                    <div><span class="namel ">Hyundai</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="hyundai()" id="but9">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/infinite.html "><img src="/images/Infiniti.png " class="bestl space">
+                                    <div><span class="namel " style="margin-left:90px ; ">INFINITI</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="infinite()" id="but10">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/jeep.html "><img src="/images/Jeep.png " class="bestl space">
+                                    <div><span class="namel ">Jeep</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="jeep()" id="but11">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/kia.html "><img src="/images/kia.png " class="bestl space">
+                                    <div><span class="namel ">kia</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="kia()" id="but12">Vote</button></span>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-style: none;">
+                    <div class="type-center-ui-products p-0 pr-lg-1 pr-xl-2 ">
+                        <div class=" row ">
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/lexus.html "><img src="/images/Lexus.png " class="bestl  space">
+                                    <div><span class="namel ">Lexus</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="lexus()" id="but13">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/Mazda.html "><img src="/images/Mazda.png " class="bestl  space">
+                                    <div><span class="namel ">mazda</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="mazda()" id="but14">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/benz.html "><img src="/images/Mercedes-Benz.png " class="bestl  space">
+                                    <div><span class="namel " style="margin-left:70px ; ">Mercedes-Benz</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="benz()" id="but15">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol bod " href="/Web Project/company/subaru.html "><img src="/images/subaru.png " class="bestl  space">
+                                    <div><span class="namel ">Subaru</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="subaru()" id="but16">Vote</button></span>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-style: none;">
+                    <div class="type-center-ui-products p-0 pr-lg-1 pr-xl-2 ">
+                        <div class=" row ">
+                            <div class="di">
+                                <a class="nonol " href="/Web Project/company/toyota.html "><img src="/images/Toyota.png " class="bestl  space">
+                                    <div><span class="namel ">Toyota</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="toyato()" id="but17">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol " href="/Web Project/company/Volkswagen.html "><img src="/images/Volkswagen.png " class="bestl  space">
+                                    <div><span class="namel " style="margin-left:90px ; ">Volkswagen</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="wagen()" id="but18">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol " href="/Web Project/company/Lamborghini.html "><img src="/images/Lamborghini.png " class="bestl  space">
+                                    <div><span class="namel " style="margin-left:100px ; ">Lamborghini</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="lamborghini()" id="but19">Vote</button></span>
+                            </div>
+                            <div class="di">
+                                <a class="nonol " href="/Web Project/company/jaguar.html "><img src="/images/Jaguar.png " class="bestl  space">
+                                    <div><span class="namel ">Jaguar</span></div>
+                                </a><span style="margin-left: 150px;"> <button type="button" class="btn btn-success come" onclick="jaguar()" id="but20">Vote</button></span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+
+
+    </form>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br><br>
+    <h2 style="margin-left: 600px;">Rankings</h2>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Acura </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 25%;" id="ac" aria-valuenow="aCURA " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Audi </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 50%;" id="ac" aria-valuenow="Audi " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">BMW </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 70%;" id="ac" aria-valuenow="BMW " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Chevrolet </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 44%;" id="ac" aria-valuenow="chevrolet " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Dodge </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 40%;" id="ac" aria-valuenow="Dodge " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Ford </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 68%;" id="ac" aria-valuenow="ford" a-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">GMC </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 26%;" id="ac" aria-valuenow="GMC " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Honda </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 70%;" id="ac" aria-valuenow="Honda " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Hyndai </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 78%;" id="ac" aria-valuenow="Hyndai " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Infinity </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 48%;" id="ac" aria-valuenow="Infinity " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Jeep </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 61%;" id="ac" aria-valuenow="Jeep " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Kia </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 80%;" id="ac" aria-valuenow="Kia " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">lexus </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 45%;" id="ac" aria-valuenow="lexus " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Benz </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 92%;" id="ac" aria-valuenow="Benz " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">infinity </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 38%;" id="ac" aria-valuenow="infinity " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Toyato </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 79%;" id="ac" aria-valuenow="Toyato " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Volkswagen </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 81%;" id="ac" aria-valuenow="Volkswagen " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Lamborghini </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 96%;" id="ac" aria-valuenow="Lamborghini " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Jaguar </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 89%;" id="ac" aria-valuenow="Jaguar " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+    <div class="hi">
+        <h1 style="margin-left: 50px;margin-right: -100px;">Subaru </h1>
+        <div class="progress container place">
+            <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 56%; " id="ac" aria-valuenow="Subaru " aria-valuemin="0 " aria-valuemax="100 "></div>
+        </div>
+    </div>
+
+    <script>
+        function acura() {
+            var acu = 10560;
+            Number(acu);
+            acu = acu + 1;
+            alert("you voted for acura ");
+            document.getElementById("but1").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function audi() {
+            var au = 200000;
+            Number(au);
+            au = au + 1;
+            alert("you voted for Audi ");
+            document.getElementById("but2").innerHTML = finish();
+        }
+
+        function bmw() {
+            var bm = 10560;
+            Number(bm);
+            bm = bm + 1;
+            alert("you voted for BMW ");
+            document.getElementById("bmw ").innerHTML = finish();
+            document.getElementById(" ").style = "width: 50% ";
+        }
+
+        function chevrolet() {
+            var che = 10560;
+            Number(che);
+            che = che + 1;
+            alert("you voted for chervolet ");
+            document.getElementById("chevolet ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function dodge() {
+            var dod = 10560;
+            Number(dod);
+            dod = dod + 1;
+            alert("you voted for Dodge ");
+            document.getElementById("dodge ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function ford() {
+            var fo = 10560;
+            Number(fo);
+            fo = fo + 1;
+            alert("you voted for Ford ");
+            document.getElementById("Ford ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function gmc() {
+            var gm = 10560;
+            Number(gm);
+            gm = gm + 1;
+            alert("you voted for GMC ");
+            document.getElementById("GMC ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function honda() {
+            var ho = 10560;
+            Number(ho);
+            ho = ho + 1;
+            alert("you voted for Honda ");
+            document.getElementById("honda ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function hyundai() {
+            var hyn = 10560;
+            Number(hyn);
+            hyn = hyn + 1;
+            alert("you voted for Hyndai ");
+            document.getElementById("hyndai ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function infinite() {
+            var inf = 10560;
+            Number(inf);
+            inf = inf + 1;
+            alert("you voted for Infinite ");
+            document.getElementById("infinite ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function jeep() {
+            var jee = 10560;
+            Number(jee);
+            jee = jee + 1;
+            alert("you voted for Jeep ");
+            document.getElementById("jeep ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function kia() {
+            var ki = 10560;
+            Number(ki);
+            ki = ki + 1;
+            alert("you voted for Kia ");
+            document.getElementById("kia ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function Lexus() {
+            var lex = 10560;
+            Number(lex);
+            lex = lex + 1;
+            alert("you voted for Lexus ");
+            document.getElementById(" ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function mazda() {
+            var maz = 10560;
+            Number(maz);
+            maz = maz + 1;
+            alert("you voted for Mazda ");
+            document.getElementById("mazda ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function benz() {
+            var ben = 10560;
+            Number(ben);
+            ben = ben + 1;
+            alert("you voted for Benz ");
+            document.getElementById("benz ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function subaru() {
+            var sub = 10560;
+            Number(sub);
+            sub = sub + 1;
+            alert("you voted for Subaru ");
+            document.getElementById("subaru ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function toyato() {
+            var to = 10560;
+            Number(to);
+            to = to + 1;
+            alert("you voted for Toyato ");
+            document.getElementById("toyato ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function wagen() {
+            var vol = 10560;
+            Number(vol);
+            vol = vol + 1;
+            alert("you voted for Volkswagen ");
+            document.getElementById("wagen ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function lamborghini() {
+            var lam = 10560;
+            Number(lam);
+            lam = lam + 1;
+            alert("you voted for Lamborghini ");
+            document.getElementById("lamborghini ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+        function jaguar() {
+            var jag = 10560;
+            Number(jag);
+            jag = jag + 1;
+            alert("you voted for jaguar ");
+            document.getElementById("jaguar ").innerHTML = finish();
+            document.getElementById("ac ").style = "width: 50% ";
+        }
+
+
+
+        function finish() {
+            document.getElementById("but1").style.backgroundColor = "red ";
+            document.getElementById("but2").style.backgroundColor = "red ";
+            document.getElementById("but3").style.backgroundColor = "red ";
+            document.getElementById("but4").style.backgroundColor = "red ";
+            document.getElementById("but5").style.backgroundColor = "red ";
+            document.getElementById("but6").style.backgroundColor = "red ";
+            document.getElementById("but7").style.backgroundColor = "red ";
+            document.getElementById("but8").style.backgroundColor = "red ";
+            document.getElementById("but9").style.backgroundColor = "red ";
+            document.getElementById("but10").style.backgroundColor = "red ";
+            document.getElementById("but11").style.backgroundColor = "red ";
+            document.getElementById("but12").style.backgroundColor = "red ";
+            document.getElementById("but13").style.backgroundColor = "red ";
+            document.getElementById("but14").style.backgroundColor = "red ";
+            document.getElementById("but15").style.backgroundColor = "red ";
+            document.getElementById("but16").style.backgroundColor = "red ";
+            document.getElementById("but17").style.backgroundColor = "red ";
+            document.getElementById("but18").style.backgroundColor = "red ";
+            document.getElementById("but19").style.backgroundColor = "red ";
+            document.getElementById("but20").style.backgroundColor = "red ";
+
+            return vote;
+        }
+    </script>
+
+    <br><br>
+    <hr>
+    <br>
+    <br>
+</body>
+
+</html>
